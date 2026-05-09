@@ -1,11 +1,12 @@
-# TODO — Static hosting fixes
+# TODO — Responsive portfolio
 
-- [x] Identify non-static template syntax causing static build/host failures.
-- [x] Convert `nav.html` to pure static HTML (remove `{{ url('/') }}`).
-- [x] Convert `footer.html` to pure static HTML (remove `{{ url('/') }}` and `{{ date('Y') }}`).
-- [x] Ensure `footer.html` contains a `#footerYear` element (for `main.js`).
+- [x] Fix mobile nav visibility in `style.css` (ensure `.nav__mobile.open` shows correctly)
 
-- [x] Re-run repo search for `{{ ... }}` inside `*.html` to confirm no Blade/template syntax remains.
+- [x] Improve very-small-screen layout (≤480px) spacing/padding to avoid cramped UI
+- [x] Add overflow protections in work/project sections (avoid horizontal scroll)
+- [x] Improve accessibility: `:focus-visible` styles
+- [x] Add reduced-motion support for marquee/float animations
 
-- [ ] Manual test: open `index.html` in browser (no build step) and verify header/footer work.
+- [ ] Quick manual test: responsive sizes (360/390/768/1024) + mobile nav open/close
+
 
