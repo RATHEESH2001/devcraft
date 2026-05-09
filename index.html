@@ -1,0 +1,906 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DevCraft — Custom Web Application Development</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+
+    <!-- Sticky Navigation (was in nav.html) -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="./" class="nav__logo">
+                <span class="nav__logo-bracket"><</span>
+                <span class="nav__logo-name">devcraft</span>
+                <span class="nav__logo-bracket">/></span>
+            </a>
+
+            <ul class="nav__links">
+                <li><a href="#services" class="nav__link">Services</a></li>
+                <li><a href="#work" class="nav__link">Work</a></li>
+                <li><a href="#process" class="nav__link">Process</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#contact" class="nav__cta">Let's Talk</a></li>
+            </ul>
+
+            <button id="theme-toggle" class="nav__theme" type="button" aria-label="Toggle theme" data-theme="dark">
+                <span class="nav__theme-icon">≾</span>
+            </button>
+
+            <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="nav__mobile" id="mobileMenu">
+            <ul class="nav__mobile-links">
+                <li><a href="#services" class="nav__mobile-link">Services</a></li>
+                <li><a href="#work" class="nav__mobile-link">Work</a></li>
+                <li><a href="#process" class="nav__mobile-link">Process</a></li>
+                <li><a href="#about" class="nav__mobile-link">About</a></li>
+                <li><a href="#contact" class="nav__mobile-link nav__mobile-cta">Let's Talk</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="noise-overlay" aria-hidden="true"></div>
+
+    <!-- ============================================================ -->
+    <!-- HERO -->
+    <!-- ============================================================ -->
+    <section class="hero" id="home">
+        <div class="hero__grid-bg"></div>
+
+        <div class="hero__inner">
+            <div class="hero__badge">
+                <span class="hero__badge-dot"></span>
+                <span>Available for freelance work</span>
+            </div>
+
+            <h1 class="hero__headline">
+                Building Scalable Web Applications &amp; Real-Time Systems
+            </h1>
+
+            <p class="hero__sub">
+                Full Stack Developer specializing in Laravel, Node.js, real-time architectures, APIs, and modern DevOps workflows.
+            </p>
+
+            <div class="hero__actions">
+                <a href="#contact" class="btn btn--primary">Hire Me</a>
+                <a href="#work" class="btn btn--ghost">View Projects</a>
+            </div>
+
+            <div class="hero__typing" aria-label="Hero typing animation">
+                <span class="hero__typing-prefix">I focus on </span>
+                <span id="hero-typing" class="hero__typing-text" data-prefix="" data-suffix="">&nbsp;</span>
+                <span class="typing-cursor">|</span>
+            </div>
+
+            <div class="hero__stats">
+                <div class="hero__stat">
+                    <span class="hero__stat-num">10+</span>
+                    <span class="hero__stat-label">Projects Delivered</span>
+                </div>
+                <div class="hero__stat-divider"></div>
+                <div class="hero__stat">
+                    <span class="hero__stat-num">1.5+</span>
+                    <span class="hero__stat-label">Years Experience</span>
+                </div>
+                <div class="hero__stat-divider"></div>
+                <div class="hero__stat">
+                    <span class="hero__stat-num">100%</span>
+                    <span class="hero__stat-label">Client Satisfaction</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero__code-block">
+            <div class="hero__code-header">
+                <span class="hero__code-dot"></span>
+                <span class="hero__code-dot hero__code-dot--y"></span>
+                <span class="hero__code-dot hero__code-dot--g"></span>
+                <span class="hero__code-filename">AppServiceProvider.php</span>
+            </div>
+            <pre class="hero__code"><code><span class="c-keyword">namespace</span> App\Providers;
+
+<span class="c-keyword">class</span> <span class="c-class">AppServiceProvider</span>
+{
+    <span class="c-keyword">public function</span> <span class="c-fn">boot</span>(): <span class="c-type">void</span>
+    {
+        <span class="c-comment">// Precision-crafted logic</span>
+        <span class="c-var">$this</span>-><span class="c-fn">registerServices</span>();
+        <span class="c-var">$this</span>-><span class="c-fn">optimizeQueries</span>();
+        <span class="c-var">$this</span>-><span class="c-fn">secureEndpoints</span>();
+    }
+}</code></pre>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- MARQUEE -->
+    <!-- ============================================================ -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+            <span>Laravel</span><span class="marquee__dot">✦</span>
+            <span>Vue.js</span><span class="marquee__dot">✦</span>
+            <span>REST APIs</span><span class="marquee__dot">✦</span>
+            <span>MySQL</span><span class="marquee__dot">✦</span>
+            <span>Docker</span><span class="marquee__dot">✦</span>
+            <span>Redis</span><span class="marquee__dot">✦</span>
+            <span>Tailwind CSS</span><span class="marquee__dot">✦</span>
+            <span>PostgreSQL</span><span class="marquee__dot">✦</span>
+            <span>AWS / Cloud</span><span class="marquee__dot">✦</span>
+            <span>GraphQL</span><span class="marquee__dot">✦</span>
+            <span>Laravel</span><span class="marquee__dot">✦</span>
+            <span>Vue.js</span><span class="marquee__dot">✦</span>
+            <span>REST APIs</span><span class="marquee__dot">✦</span>
+            <span>MySQL</span><span class="marquee__dot">✦</span>
+            <span>Docker</span><span class="marquee__dot">✦</span>
+            <span>Redis</span><span class="marquee__dot">✦</span>
+            <span>Tailwind CSS</span><span class="marquee__dot">✦</span>
+            <span>PostgreSQL</span><span class="marquee__dot">✦</span>
+            <span>AWS / Cloud</span><span class="marquee__dot">✦</span>
+            <span>GraphQL</span><span class="marquee__dot">✦</span>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SERVICES -->
+    <!-- ============================================================ -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">// what I do</span>
+                <h2 class="section-title">Services</h2>
+                <p class="section-desc">End-to-end development from architecture to deployment. No hand-offs, no miscommunication — just clean, working software.</p>
+            </div>
+
+            <div class="services__grid">
+
+                <div class="service-card" data-reveal>
+                    <div class="service-card__num">01</div>
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="2" y="2" width="28" height="20" rx="3" stroke="currentColor" stroke-width="1.5" />
+                            <path d="M9 26h14M16 22v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M8 9l4 4-4 4" stroke="#00F5D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M15 17h9" stroke="#00F5D4" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Custom Web Applications</h3>
+                    <p class="service-card__desc">Full-stack web apps built to your exact specification. Robust architecture, clean code, and solid test coverage from day one.</p>
+                    <ul class="service-card__tags">
+                        <li>Laravel Backend</li>
+                        <li>Vue / React Frontend</li>
+                        <li>Database Design</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-reveal>
+                    <div class="service-card__num">02</div>
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5" />
+                            <path d="M16 2v30M2 16h30" stroke="#00F5D4" stroke-width="1.5" />
+                            <path d="M6 6c3 4 7 6 10 6s7-2 10-6M6 26c3-4 7-6 10-6s7 2 10 6" stroke="currentColor" stroke-width="1.5" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">API Development</h3>
+                    <p class="service-card__desc">RESTful and GraphQL APIs designed for performance and developer experience. Documented, versioned, and secured.</p>
+                    <ul class="service-card__tags">
+                        <li>REST / GraphQL</li>
+                        <li>OAuth &amp; JWT</li>
+                        <li>API Documentation</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-reveal>
+                    <div class="service-card__num">03</div>
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M4 8h24v16a4 4 0 01-4 4H8a4 4 0 01-4-4V8z" stroke="currentColor" stroke-width="1.5" />
+                            <path d="M4 8V6a2 2 0 012-2h20a2 2 0 012 2v2" stroke="currentColor" stroke-width="1.5" />
+                            <path d="M11 16h10M11 20h6" stroke="#00F5D4" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">SaaS Development</h3>
+                    <p class="service-card__desc">Multi-tenant SaaS platforms with subscription billing, user management, and analytics dashboards built to scale.</p>
+                    <ul class="service-card__tags">
+                        <li>Multi-tenancy</li>
+                        <li>Stripe Integration</li>
+                        <li>Admin Dashboards</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-reveal>
+                    <div class="service-card__num">04</div>
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 3L3 9v14l13 6 13-6V9L16 3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            <path d="M3 9l13 6 13-6M16 15v14" stroke="#00F5D4" stroke-width="1.5" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">MVP &amp; Prototyping</h3>
+                    <p class="service-card__desc">Rapid prototype to validate your idea fast. Ship a polished, production-ready MVP in weeks, not months.</p>
+                    <ul class="service-card__tags">
+                        <li>Fast Delivery</li>
+                        <li>Iterative Builds</li>
+                        <li>Startup-ready</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-reveal>
+                    <div class="service-card__num">05</div>
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="3" y="7" width="26" height="18" rx="2" stroke="currentColor" stroke-width="1.5" />
+                            <path d="M3 12h26" stroke="currentColor" stroke-width="1.5" />
+                            <circle cx="7.5" cy="9.5" r="1" fill="#00F5D4" />
+                            <circle cx="11.5" cy="9.5" r="1" fill="#00F5D4" />
+                            <path d="M9 18l3 3 7-7" stroke="#00F5D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Legacy App Modernization</h3>
+                    <p class="service-card__desc">Breathe new life into outdated codebases. Refactor, re-architect, and migrate to modern stacks without downtime.</p>
+                    <ul class="service-card__tags">
+                        <li>Code Refactoring</li>
+                        <li>Migration</li>
+                        <li>Performance Tuning</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-reveal>
+                    <div class="service-card__num">06</div>
+                    <div class="service-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M28 20c0 4.4-5.4 8-12 8S4 24.4 4 20s5.4-8 12-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M16 4v8M22 6l-6 6-6-6" stroke="#00F5D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="24" cy="10" r="6" fill="none" stroke="currentColor" stroke-width="1.5" />
+                            <path d="M22 10l1.5 1.5L26 8" stroke="#00F5D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Deployment &amp; DevOps</h3>
+                    <p class="service-card__desc">Docker, CI/CD pipelines, cloud setup on AWS or DigitalOcean. Your app ships fast and stays up.</p>
+                    <ul class="service-card__tags">
+                        <li>Docker / CI-CD</li>
+                        <li>Cloud Setup</li>
+                        <li>Monitoring</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- WORK / PORTFOLIO -->
+    <!-- ============================================================ -->
+    <section class="work" id="work">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">// selected projects</span>
+                <h2 class="section-title">Recent Work</h2>
+            </div>
+
+            <div class="work__top">
+                <div class="project-filters" id="project-filters">
+                    <div class="project-filters__label">Filter by technology</div>
+                    <div class="project-filters__chips">
+                        <button class="chip chip--active" type="button" data-filter-chip="all" aria-pressed="true">All</button>
+                        <button class="chip" type="button" data-filter-chip="laravel" aria-pressed="false">Laravel</button>
+                        <button class="chip" type="button" data-filter-chip="node" aria-pressed="false">Node.js</button>
+                        <button class="chip" type="button" data-filter-chip="realtime" aria-pressed="false">Real-time</button>
+                        <button class="chip" type="button" data-filter-chip="api" aria-pressed="false">APIs</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work__grid">
+                <article class="project-card" data-reveal data-project-item data-tech="node,realtime,api">
+                    <div class="project-card__visual project-card__visual--2">
+                        <div class="project-card__api-block" aria-label="Project screenshot placeholder">
+                            <div class="project-card__api-line"><span class="api-method api-method--get">BOT</span> Nifty50 • Real-time</div>
+                            <div class="project-card__api-line"><span class="api-method api-method--post">WS</span> WebSocket Stream</div>
+                            <div class="project-card__api-line"><span class="api-method api-method--put">RISK</span> 4-Layer Guardrails</div>
+                            <div class="project-card__api-line"><span class="api-method api-method--del">EXIT</span> Time-Decay Profit Booking</div>
+                        </div>
+                    </div>
+                    <div class="project-card__info">
+                        <div class="project-card__tags">
+                            <span>FinTech</span><span>Node.js</span><span>WebSockets</span><span>Redis</span><span>Flutter</span>
+                        </div>
+                        <h3 class="project-card__title">Nifty50 Automated Trading System</h3>
+                        <p class="project-card__desc">Just built: a professional-grade, event-driven trading bot for the Nifty 50 market—designed for speed, precision, and safety.</p>
+                        <p class="project-card__desc" style="margin-top:-8px;">
+                            <strong>Confluence Engine:</strong> multi-timeframe scoring (MACD/Momentum + Fibonacci pullback + trendline proximity + price action) with <strong>news guard</strong> (Finnhub) to block trades before high-impact events.
+                        </p>
+                        <p class="project-card__desc">
+                            <strong>Safety First:</strong> capital manager (dynamic sizing), circuit breaker (daily loss limits), cooldown manager (anti-revenge), and time gate (liquidity hours).
+                        </p>
+                        <p class="project-card__desc">
+                            <strong>Exit Management:</strong> time-decay profit booking to secure gains and reduce exposure as momentum fades.
+                        </p>
+                        <div class="project-card__tags" style="margin-top:14px;">
+                            <span>Angel One SmartAPI</span><span>MariaDB</span><span>Docker</span>
+                        </div>
+                        <div class="project-card__buttons" style="margin-top:10px;">
+                            <a href="#contact" class="project-card__link">Hire for a similar build →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" data-reveal data-project-item data-tech="laravel,realtime,api">
+                    <div class="project-card__visual project-card__visual--1">
+                        <div class="project-card__screen">
+                            <div class="project-card__screen-bar"></div>
+                            <div class="project-card__screen-content">
+                                <div class="psc-row psc-row--header"></div>
+                                <div class="psc-charts">
+                                    <div class="psc-bar" style="height:82%"></div>
+                                    <div class="psc-bar" style="height:64%"></div>
+                                    <div class="psc-bar" style="height:92%"></div>
+                                    <div class="psc-bar" style="height:58%"></div>
+                                    <div class="psc-bar" style="height:76%"></div>
+                                    <div class="psc-bar" style="height:48%"></div>
+                                </div>
+                                <div class="psc-row"></div>
+                                <div class="psc-row psc-row--sm"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card__info">
+                        <div class="project-card__tags">
+                            <span>LMS</span>
+                            <span>Laravel 11</span>
+                            <span>Filament</span>
+                            <span>Realtime Chat</span>
+                            <span>Zoom</span>
+                            <span>Vimeo</span>
+                        </div>
+
+                        <h3 class="project-card__title">Education / LMS Platform</h3>
+                        <p class="project-card__desc">Built a modern Learning Management System focused on scalable education workflows, realtime communication, and structured student progression.</p>
+                        <p class="project-card__desc" style="margin-top:-8px;">
+                            <strong>Learning Architecture:</strong> Course → Subject → Lesson hierarchy with level-gated progression (Level 1–4), controlled content visibility, and auto-progression logic for students.
+                        </p>
+                        <p class="project-card__desc">
+                            <strong>Live + Recorded Learning:</strong> integrated Zoom live classes for virtual sessions and Vimeo-powered recorded lessons for scalable video delivery and content management.
+                        </p>
+                        <p class="project-card__desc">
+                            <strong>Realtime Features:</strong> built student–tutor realtime chat using Laravel Echo/Reverb, Livewire, conversations, and message event broadcasting for interactive communication.
+                        </p>
+                        <p class="project-card__desc">
+                            <strong>Enrollment System:</strong> implemented offline payment verification workflow with approval states, secure enrollments, and role-based access management using Spatie Permissions.
+                        </p>
+                        <div class="project-card__tags" style="margin-top:14px;">
+                            <span>Livewire</span>
+                            <span>MySQL</span>
+                            <span>Redis</span>
+                            <span>Docker</span>
+                            <span>Spatie Permission</span>
+                        </div>
+                        <div class="project-card__buttons" style="margin-top:10px;">
+                            <a href="#contact" class="project-card__link">Hire for a similar LMS build →</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- PROCESS -->
+    <!-- ============================================================ -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">// how it works</span>
+                <h2 class="section-title">My Process</h2>
+                <p class="section-desc">A straightforward, collaborative process with no surprises. You'll always know what's happening and what comes next.</p>
+            </div>
+
+            <div class="process__steps">
+                <div class="process__step" data-reveal>
+                    <div class="process__step-num">01</div>
+                    <div class="process__step-content">
+                        <h3>Discovery Call</h3>
+                        <p>We talk through your idea, goals, and constraints. I ask a lot of questions — the right ones. No commitment needed.</p>
+                    </div>
+                </div>
+                <div class="process__connector"></div>
+                <div class="process__step" data-reveal>
+                    <div class="process__step-num">02</div>
+                    <div class="process__step-content">
+                        <h3>Scoping &amp; Proposal</h3>
+                        <p>I send a detailed spec: features, technical plan, timeline, and fixed price. No hourly billing surprises.</p>
+                    </div>
+                </div>
+                <div class="process__connector"></div>
+                <div class="process__step" data-reveal>
+                    <div class="process__step-num">03</div>
+                    <div class="process__step-content">
+                        <h3>Build &amp; Iterate</h3>
+                        <p>Development in focused sprints. You see working software every 1–2 weeks and give feedback directly.</p>
+                    </div>
+                </div>
+                <div class="process__connector"></div>
+                <div class="process__step" data-reveal>
+                    <div class="process__step-num">04</div>
+                    <div class="process__step-content">
+                        <h3>Launch &amp; Handoff</h3>
+                        <div class="project-card__tags" style="margin-top:14px;">
+                            <span>Livewire</span>
+                            <span>MySQL</span>
+                            <span>Redis</span>
+                            <span>Docker</span>
+                            <span>Spatie Permission</span>
+                        </div>
+
+                        <div class="project-card__buttons" style="margin-top:10px;">
+                            <a href="#contact" class="project-card__link">Hire for a similar LMS build →</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- PROCESS -->
+    <!-- ============================================================ -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">// how it works</span>
+                <h2 class="section-title">My Process</h2>
+                <p class="section-desc">A straightforward, collaborative process with no surprises. You'll always know
+                    what's happening and what comes next.</p>
+            </div>
+
+            <div class="process__steps">
+                <div class="process__step" data-reveal>
+                    <div class="process__step-num">01</div>
+                    <div class="process__step-content">
+                        <h3>Discovery Call</h3>
+                        <p>We talk through your idea, goals, and constraints. I ask a lot of questions — the right ones.
+                            No
+                            commitment needed.</p>
+                    </div>
+                </div>
+                <div class="process__connector"></div>
+                <div class="process__step" data-reveal>
+                    <div class="process__step-num">02</div>
+                    <div class="process__step-content">
+                        <h3>Scoping &amp; Proposal</h3>
+                        <p>I send a detailed spec: features, technical plan, timeline, and fixed price. No hourly
+                            billing
+                            surprises.</p>
+                    </div>
+                </div>
+                <div class="process__connector"></div>
+                <div class="process__step" data-reveal>
+                    <div class="process__step-num">03</div>
+                    <div class="process__step-content">
+                        <h3>Build &amp; Iterate</h3>
+                        <p>Development in focused sprints. You see working software every 1–2 weeks and give feedback
+                            directly.</p>
+                    </div>
+                </div>
+                <div class="process__connector"></div>
+                <div class="process__step" data-reveal>
+                    <div class="process__step-num">04</div>
+                    <div class="process__step-content">
+                        <h3>Launch &amp; Handoff</h3>
+                        <p>Deployed, documented, and yours. I stay on for 30 days post-launch to fix any issues at no
+                            extra
+                            charge.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- TESTIMONIALS -->
+    <!-- ============================================================ -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">// client feedback</span>
+                <h2 class="section-title">What Clients Say</h2>
+            </div>
+
+            <div class="testimonials__grid">
+
+                <div class="testimonial-card" data-reveal>
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <blockquote class="testimonial-card__quote">"Delivered exactly what we needed in record time. The
+                        codebase is clean and our team could pick it up immediately. Highly recommend."</blockquote>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">JM</div>
+                        <div>
+                            <div class="testimonial-card__name">James Morrison</div>
+                            <div class="testimonial-card__role">CTO, Launchpad Inc.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-reveal>
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <blockquote class="testimonial-card__quote">"Our legacy platform was a nightmare. In 3 months it was
+                        fully modernized, faster, and our ops team actually enjoys using it now."</blockquote>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">SR</div>
+                        <div>
+                            <div class="testimonial-card__name">Sofia Reyes</div>
+                            <div class="testimonial-card__role">Founder, FlowStack</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-reveal>
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <blockquote class="testimonial-card__quote">"The API is rock solid. Documentation was thorough, and
+                        any
+                        question I had was answered within hours. This is how freelance work should feel."</blockquote>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">AK</div>
+                        <div>
+                            <div class="testimonial-card__name">Ali Khan</div>
+                            <div class="testimonial-card__role">Lead Dev, NexaTech</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- ABOUT -->
+    <!-- ============================================================ -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__visual" data-reveal>
+                    <div class="about__avatar-wrap">
+                        <div class="about__avatar">
+                            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="100" cy="80" r="45" stroke="#00F5D4" stroke-width="1.5" />
+                                <path d="M30 190c0-38.66 31.34-70 70-70s70 31.34 70 70" stroke="#00F5D4"
+                                    stroke-width="1.5" />
+                                <circle cx="100" cy="80" r="30" fill="#0a0e1a" stroke="#1e2a3a" stroke-width="1" />
+                                <text x="100" y="88" text-anchor="middle" font-family="JetBrains Mono" font-size="22"
+                                    fill="#00F5D4">{ }</text>
+                            </svg>
+                        </div>
+                        <div class="about__avatar-border"></div>
+                    </div>
+                    <div class="about__tech-stack">
+                        <span>PHP 8.3</span>
+                        <span>Laravel 11</span>
+                        <span>Vue 3</span>
+                        <span>MySQL</span>
+                        <span>Docker</span>
+                        <span>AWS</span>
+                        <span>Redis</span>
+                        <span>TDD</span>
+                    </div>
+                </div>
+
+                <div class="about__content" data-reveal>
+                    <span class="section-label">// about me</span>
+                    <h2 class="about__title">Senior Developer.<br>Solo. Focused. Fast.</h2>
+                    <p>I'm a full-stack developer with 1.5+ years building web applications for startups and growing
+                        businesses. I work independently — which means you deal directly with the person writing your
+                        code.
+                    </p>
+                    <p>My stack centers on <strong>Laravel</strong> for robust backends and <strong>Vue.js</strong> for
+                        reactive frontends. I care about clean architecture, readable code, and software that's easy to
+                        hand
+                        off or extend.</p>
+                    <p>I take on a limited number of projects at a time, so every client gets my full attention.</p>
+                    <div class="about__highlights">
+                        <div class="about__highlight">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M3 9l4 4 8-8" stroke="#00F5D4" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Laravel Certified Developer
+                        </div>
+                        <div class="about__highlight">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M3 9l4 4 8-8" stroke="#00F5D4" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Test-Driven Development
+                        </div>
+                        <div class="about__highlight">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M3 9l4 4 8-8" stroke="#00F5D4" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            SOLID Principles &amp; Clean Code
+                        </div>
+                        <div class="about__highlight">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M3 9l4 4 8-8" stroke="#00F5D4" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Transparent Communication
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn--primary">Work With Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- TECHNICAL SKILLS -->
+    <!-- ============================================================ -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">// technical skills</span>
+                <h2 class="section-title">Built for production.</h2>
+                <p class="section-desc">Backend-first engineering with a focus on clean architecture, scalable APIs, and
+                    real-time systems.</p>
+            </div>
+
+            <div class="skills__grid">
+                <div class="skill-group" data-reveal>
+                    <h3 class="skill-group__title">Backend</h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">PHP</div>
+                        <div class="skill-card">Laravel</div>
+                        <div class="skill-card">Node.js</div>
+                        <div class="skill-card">Express.js</div>
+                    </div>
+                </div>
+
+                <div class="skill-group" data-reveal>
+                    <h3 class="skill-group__title">Databases</h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">MySQL</div>
+                        <div class="skill-card">MariaDB</div>
+                        <div class="skill-card">MongoDB</div>
+                        <div class="skill-card">Redis</div>
+                    </div>
+                </div>
+
+                <div class="skill-group" data-reveal>
+                    <h3 class="skill-group__title">Frontend</h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">Livewire</div>
+                        <div class="skill-card">Alpine.js</div>
+                        <div class="skill-card">Tailwind CSS</div>
+                        <div class="skill-card">Inertia.js</div>
+                    </div>
+                </div>
+
+                <div class="skill-group" data-reveal>
+                    <h3 class="skill-group__title">Real-Time Technologies</h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">WebSockets</div>
+                        <div class="skill-card">Laravel Echo</div>
+                        <div class="skill-card">Socket.io</div>
+                    </div>
+                </div>
+
+                <div class="skill-group" data-reveal>
+                    <h3 class="skill-group__title">API &amp; Integrations</h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">REST APIs</div>
+                        <div class="skill-card">Third-party integrations</div>
+                    </div>
+                </div>
+
+                <div class="skill-group" data-reveal>
+                    <h3 class="skill-group__title">DevOps &amp; Tools</h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">Docker</div>
+                        <div class="skill-card">Git</div>
+                        <div class="skill-card">Composer</div>
+                        <div class="skill-card">Laravel Breeze</div>
+                        <div class="skill-card">Jetstream</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- WHY WORK WITH ME -->
+    <!-- ============================================================ -->
+    <section class="why" id="why">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">// why you’ll love working with me</span>
+                <h2 class="section-title">Senior delivery. No drama.</h2>
+                <p class="section-desc">Conversion-focused process built for remote clients and fast-moving teams.</p>
+            </div>
+
+            <div class="why__grid">
+                <div class="why-card" data-reveal>
+                    <h3 class="why-card__title">Clean &amp; scalable architecture</h3>
+                    <p class="why-card__desc">Service boundaries, maintainable codebases, and scalable API design that
+                        won’t collapse under growth.</p>
+                </div>
+                <div class="why-card" data-reveal>
+                    <h3 class="why-card__title">Production-ready coding standards</h3>
+                    <p class="why-card__desc">Testing, error handling, performance tuning, and secure-by-default
+                        implementation patterns.</p>
+                </div>
+                <div class="why-card" data-reveal>
+                    <h3 class="why-card__title">Real-time systems expertise</h3>
+                    <p class="why-card__desc">WebSocket workflows, event-driven architecture, and reliable realtime UX
+                        for
+                        dashboards, chat, and live updates.</p>
+                </div>
+                <div class="why-card" data-reveal>
+                    <h3 class="why-card__title">Fast development workflows</h3>
+                    <p class="why-card__desc">Clear milestones, frequent check-ins, and rapid iteration—so you see
+                        progress
+                        early and often.</p>
+                </div>
+                <div class="why-card" data-reveal>
+                    <h3 class="why-card__title">Strong debugging &amp; problem-solving</h3>
+                    <p class="why-card__desc">Structured diagnosis, pragmatic fixes, and long-term improvements—not
+                        quick
+                        patches.</p>
+                </div>
+                <div class="why-card" data-reveal>
+                    <h3 class="why-card__title">Collaborative communication</h3>
+                    <p class="why-card__desc">Transparent updates, documented decisions, and smooth handoff-ready code.
+                    </p>
+                </div>
+            </div>
+
+            <div class="why__cta" data-reveal>
+                <a href="#contact" class="btn btn--primary">Get a Quote</a>
+                <a href="#work" class="btn btn--ghost">See Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- CONTACT -->
+    <!-- ============================================================ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__inner">
+                <div class="contact__left" data-reveal>
+                    <span class="section-label">// get in touch</span>
+                    <h2 class="contact__title">Let's Build Something.</h2>
+                    <p class="contact__desc">Have a project in mind? Tell me about it. I typically respond within 24
+                        hours.</p>
+
+                    <div class="contact__methods">
+                        <a href="mailto:hello@devcraft.dev" class="contact__method">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor"
+                                    stroke-width="1.5" />
+                                <path d="M2 7l8 5 8-5" stroke="#00F5D4" stroke-width="1.5" />
+                            </svg>
+                            ratheesh82001@gmail.com
+                        </a>
+                        <a href="https://calendly.com" target="_blank" class="contact__method">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <rect x="3" y="4" width="14" height="13" rx="2" stroke="currentColor"
+                                    stroke-width="1.5" />
+                                <path d="M7 2v4M13 2v4M3 9h14" stroke="#00F5D4" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                            +91 9345664881
+                        </a>
+                    </div>
+
+                    <div class="contact__availability">
+                        <span class="footer__status-dot"></span>
+                        <span>Currently accepting projects starting <strong>next month</strong></span>
+                    </div>
+                </div>
+
+                <div class="contact__right" data-reveal>
+                    <form class="contact-form" action="#" method="post" novalidate>
+                        <div class="form-success" id="formSuccess" hidden>Thanks! Your message is ready to send.
+                            (Frontend demo)</div>
+                        <div class="form-error" id="formError" hidden>Please check the fields and try again.</div>
+
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Alex Johnson" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="alex@company.com" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="project_type">Project Type</label>
+                            <select id="project_type" name="project_type" required>
+                                <option value="">Select a type...</option>
+                                <option value="web-app">Custom Web Application</option>
+                                <option value="api">API Development</option>
+                                <option value="saas">SaaS Platform</option>
+                                <option value="mvp">MVP / Prototype</option>
+                                <option value="legacy">Legacy Modernization</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Tell Me About Your Project</label>
+                            <textarea id="message" name="message" rows="5"
+                                placeholder="What are you building? What problem does it solve? Any timeline or budget in mind?"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--full">Send Message →</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- FOOTER (was in footer.html) -->
+    <!-- ============================================================ -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="./" class="footer__logo">
+                        <span class="nav__logo-bracket"> <
+                            </span> devcraft<span class="nav__logo-bracket">/></span>
+                    </a>
+                    <p class="footer__tagline">Web applications built with intent.</p>
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__col">
+                        <h4 class="footer__col-title">Navigation</h4>
+                        <ul>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#work">Work</a></li>
+                            <li><a href="#process">Process</a></li>
+                            <li><a href="#about">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__col-title">Contact</h4>
+                        <ul>
+                            <li><a href="mailto:hello@devcraft.dev">hello@devcraft.dev</a></li>
+                            <li><a href="https://github.com" target="_blank" rel="noreferrer noopener">GitHub</a></li>
+                            <li><a href="https://linkedin.com" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+                            </li>
+                            <li><a href="https://twitter.com" target="_blank" rel="noreferrer noopener">Twitter / X</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <span class="footer__copy">&copy; <span id="footerYear"></span> DevCraft. All rights reserved.</span>
+                <span class="footer__status">
+                    <span class="footer__status-dot"></span>
+                    Available for new projects
+                </span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
