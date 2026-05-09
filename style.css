@@ -268,12 +268,13 @@ strong { font-weight: 500; color: var(--text); }
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 60px;
-    padding: calc(var(--nav-h) + 60px) 80px 80px;
+    padding: calc(var(--nav-h) + 60px) clamp(16px, 5vw, 80px) 80px;
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
 }
+
 
 .hero__grid-bg {
     position: absolute;
@@ -1264,7 +1265,9 @@ strong { font-weight: 500; color: var(--text); }
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
+    align-items: stretch;
 }
+
 
 .skill-group {
     background: rgba(19,25,41,0.6);
