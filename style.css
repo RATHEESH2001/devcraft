@@ -50,6 +50,13 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/* Extra safety for mobile: avoid any accidental side-scroll */
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
 :focus-visible {
     outline: 2px solid rgba(0,245,212,0.85);
     outline-offset: 3px;
@@ -246,6 +253,7 @@ strong { font-weight: 500; color: var(--text); }
     background: var(--bg-2);
     border-bottom: 1px solid var(--border);
     padding: 16px 24px 24px;
+    width: 100%;
 }
 
 .nav__mobile-links { display: flex; flex-direction: column; gap: 4px; }
@@ -1325,10 +1333,11 @@ strong { font-weight: 500; color: var(--text); }
 
 .why__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 16px;
     margin-bottom: 26px;
 }
+
 
 .why-card {
     background: rgba(19,25,41,0.6);
@@ -1430,17 +1439,37 @@ strong { font-weight: 500; color: var(--text); }
 @media (max-width: 768px) {
     .nav__links { display: none; }
     .nav__hamburger { display: flex; }
-    .nav__mobile { display: none; }
+
+    /* Fix feature cards in Why section breaking on mobile */
+    .why__grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+
+    .nav__mobile {
+        display: none;
+        width: 100%;
+    }
+
     .nav__mobile.open { display: block; }
 
     .services__grid {
         grid-template-columns: 1fr;
     }
 
+    /* Stack technical skill cards vertically */
+    .skills__grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+
 
     .work__grid {
         grid-template-columns: 1fr;
     }
+
 
     .project-card--large {
         grid-template-columns: 1fr;
