@@ -1,14 +1,11 @@
-# TODO - Convert Laravel Blade to Pure HTML/CSS/JS
+# TODO — Static hosting fixes
 
-- [ ] Replace `index.html` with a standalone pure HTML page (remove Blade directives, add full `<html>/<head>/<body>`).
+- [x] Identify non-static template syntax causing static build/host failures.
+- [x] Convert `nav.html` to pure static HTML (remove `{{ url('/') }}`).
+- [x] Convert `footer.html` to pure static HTML (remove `{{ url('/') }}` and `{{ date('Y') }}`).
+- [x] Ensure `footer.html` contains a `#footerYear` element (for `main.js`).
 
-- [x] Convert contact form in `index.html` from Blade (`route`, `@csrf`, `old`, `@error`) to pure HTML.
-- [x] Add form success/error containers (`#formSuccess`, `#formError`) for JS.
+- [x] Re-run repo search for `{{ ... }}` inside `*.html` to confirm no Blade/template syntax remains.
 
-
-- [x] Update `main.js` to handle contact form submit frontend-only and remove any assumptions about Blade/server responses.
-
-- [ ] Convert `nav.html` and `footer.html` Blade helpers to static HTML (optional if they’re inlined later).
-- [ ] Run a repo search to ensure no Blade syntax remains in HTML (`@csrf`, `@error`, `{{ route`, `{{ url`, `@extends`, `@section`, `@endsection`, `old(`, `session(`).
-- [ ] Quick manual test: open `index.html` in browser and verify nav scrolling, reveal animations, and contact form UX.
+- [ ] Manual test: open `index.html` in browser (no build step) and verify header/footer work.
 
