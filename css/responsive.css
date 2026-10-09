@@ -1,0 +1,129 @@
+/* ==========================================================================
+   DEVCRAFT RESPONSIVE BREAKPOINTS & ADAPTIVE LAYOUT
+   Mobile-First: 480px, 768px, 1024px, 1280px, 1536px
+   ========================================================================== */
+
+/* Safe area padding for notches and gesture navigation */
+body {
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
+}
+
+/* Base Mobile Hero Stack (< 1024px) */
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(2.5rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.hero__actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
+@media (min-width: 480px) {
+  .hero__actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+/* 480px Breakpoint: Small Tablets / Phablets */
+@media (min-width: 480px) {
+  .hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+}
+
+/* 768px Breakpoint: Tablets */
+@media (min-width: 768px) {
+  .contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: clamp(2rem, 4vw, 4rem);
+    align-items: start;
+  }
+
+  .about-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    gap: clamp(2.5rem, 4vw, 4.5rem);
+    align-items: center;
+  }
+}
+
+/* 1024px Breakpoint: Desktop */
+@media (min-width: 1024px) {
+  .hero__grid {
+    grid-template-columns: 1.15fr 0.85fr;
+  }
+
+  .cloud-feature-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2.5rem, 4vw, 5rem);
+    align-items: center;
+  }
+
+  .cloud-feature-row--reverse {
+    direction: rtl;
+  }
+
+  .cloud-feature-row--reverse > * {
+    direction: ltr;
+  }
+}
+
+/* 1280px Breakpoint: Large Desktop */
+@media (min-width: 1280px) {
+  :root {
+    --container: 1240px;
+  }
+}
+
+/* 1536px Breakpoint: Ultra-Wide Screens */
+@media (min-width: 1536px) {
+  :root {
+    --container: 1360px;
+  }
+}
+
+/* Landscape Phone Fixes */
+@media (max-height: 500px) and (orientation: landscape) {
+  .header {
+    height: 60px;
+  }
+
+  :root {
+    --header-height: 60px;
+  }
+
+  .mobile-drawer {
+    padding: var(--space-4);
+  }
+}
+
+/* Print Styles */
+@media print {
+  .header,
+  .footer,
+  .theme-toggle,
+  .btn,
+  .marquee {
+    display: none;
+  }
+
+  body {
+    background: var(--color-white);
+    color: var(--color-black);
+  }
+}

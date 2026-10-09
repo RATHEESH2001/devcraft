@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Engineering Services — DevCraft</title>
+  <meta name="description" content="Explore DevCraft's specialized backend engineering services: custom web apps, scalable APIs, SaaS development, MVP prototyping, legacy modernization, and DevOps.">
+  <link rel="canonical" href="./services.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Engineering Services — DevCraft">
+  <meta property="og:description" content="Specialized engineering for teams that need a reliable product foundation, clean APIs, and zero downtime.">
+  <meta property="og:url" content="./services.html">
+  <meta property="og:site_name" content="DevCraft">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+
+  <!-- Anti-FOUC Theme Script -->
+  <script>
+    (function() {
+      try {
+        var theme = localStorage.getItem('devcraft_theme');
+        if (!theme) {
+          theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        }
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Software Development & Architecture",
+    "provider": {
+      "@type": "ProfessionalService",
+      "name": "DevCraft"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Core Backend & Web Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Custom Web Applications"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "API & Realtime Systems"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SaaS Platforms & Multi-Tenancy"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "MVP & Rapid Prototyping"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Legacy Application Modernization"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "DevOps & Cloud Infrastructure"}}
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ====================================================================
+       SHARED HEADER
+       ==================================================================== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="./index.html" class="logo" aria-label="DevCraft Home">
+        <span class="logo__bracket">&lt;</span>
+        <span>devcraft</span>
+        <span class="logo__bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-menu__list">
+          <li><a href="./services.html" class="nav-menu__link" aria-current="page">Services</a></li>
+          <li><a href="./work.html" class="nav-menu__link">Work</a></li>
+          <li><a href="./cloud.html" class="nav-menu__link">Cloud</a></li>
+          <li><a href="./about.html" class="nav-menu__link">Company</a></li>
+          <li><a href="./contact.html" class="nav-menu__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="theme-toggle__icon--dark" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-toggle__icon--light" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="./contact.html" class="btn btn--primary header__cta">Book Consultation &rarr;</a>
+
+        <button type="button" class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer__backdrop" id="mobileBackdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="mobile-drawer__header">
+      <a href="./index.html" class="logo" aria-label="DevCraft Home">
+        <span class="logo__bracket">&lt;</span>
+        <span>devcraft</span>
+        <span class="logo__bracket">/&gt;</span>
+      </a>
+      <button type="button" class="mobile-drawer__close" id="closeDrawer" aria-label="Close navigation drawer">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-drawer__nav">
+      <a href="./index.html" class="mobile-drawer__link">Home</a>
+      <a href="./services.html" class="mobile-drawer__link" aria-current="page">Services</a>
+      <a href="./work.html" class="mobile-drawer__link">Work</a>
+      <a href="./cloud.html" class="mobile-drawer__link">Cloud</a>
+      <a href="./about.html" class="mobile-drawer__link">Company</a>
+      <a href="./contact.html" class="mobile-drawer__link">Contact</a>
+    </nav>
+    <div class="mobile-drawer__footer">
+      <a href="./contact.html" class="btn btn--primary btn--full">Book Consultation &rarr;</a>
+    </div>
+  </aside>
+
+  <!-- ====================================================================
+       MAIN CONTENT
+       ==================================================================== -->
+  <main id="main">
+    <!-- HERO HEADER -->
+    <section class="section section--compact-bottom">
+      <div class="ambient-glow ambient-glow--primary ambient-glow--top-right"></div>
+      <div class="container">
+        <div class="section-header section-header--left" data-sal="slide-up">
+          <div class="rbt-card-badge badge-mb">Specialized Technical Capabilities</div>
+          <h1>Architected for High Uptime &amp; Speed</h1>
+          <p class="lead">
+            Focused backend and full-stack engineering for teams that need a reliable product foundation, not another disposable prototype.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 SERVICES GRID -->
+    <section class="section section--flush-top" aria-label="Services List">
+      <div class="container">
+        <div class="grid-cards grid-cards--3">
+          
+          <!-- Service 1: Custom Web Applications -->
+          <article class="rbt-card variation-01 rbt-hover" data-sal="slide-up">
+            <div class="rbt-card-top">
+              <span class="rbt-card-badge">BUILD</span>
+              <span class="rbt-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </span>
+            </div>
+            <h2 class="rbt-card-title">Custom Web Applications</h2>
+            <p class="rbt-card-desc">
+              Full-stack business applications built to your exact operational specifications. Robust domain models, clean code separation, and comprehensive test coverage from day one.
+            </p>
+            <ul class="rbt-list-style-2">
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Enterprise Laravel 11 Backend &amp; Service Layer Architecture</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Reactive User Interfaces via Vue 3, Inertia, or Livewire</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Normalized Database Design (PostgreSQL, MySQL, MariaDB)</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Automated Unit &amp; Integration Testing Suites</span>
+              </li>
+            </ul>
+            <div class="rbt-card-footer">
+              <a href="./contact.html" class="btn btn--secondary btn--full">Request Scoping &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Service 2: API & Realtime Systems -->
+          <article class="rbt-card variation-01 rbt-hover" data-sal="slide-up" data-sal-delay="100">
+            <div class="rbt-card-top">
+              <span class="rbt-card-badge">ARCHITECT</span>
+              <span class="rbt-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </span>
+            </div>
+            <h2 class="rbt-card-title">API &amp; Realtime Systems</h2>
+            <p class="rbt-card-desc">
+              High-throughput RESTful and GraphQL APIs engineered for sub-50ms responses, combined with bidirectional WebSocket streams for live collaboration and finance.
+            </p>
+            <ul class="rbt-list-style-2">
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>REST &amp; GraphQL Gateways with Strict Semantic Versioning</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Event-Driven WebSockets via Laravel Reverb &amp; Socket.io</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>OAuth2, JWT Authentication, and Rate Limiting Guardrails</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>OpenAPI / Swagger Contract-Driven Documentation</span>
+              </li>
+            </ul>
+            <div class="rbt-card-footer">
+              <a href="./contact.html" class="btn btn--secondary btn--full">Request Scoping &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Service 3: SaaS Platforms & Multi-Tenancy -->
+          <article class="rbt-card variation-01 rbt-hover" data-sal="slide-up" data-sal-delay="200">
+            <div class="rbt-card-top">
+              <span class="rbt-card-badge">SCALE</span>
+              <span class="rbt-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+              </span>
+            </div>
+            <h2 class="rbt-card-title">SaaS Platforms &amp; Multi-Tenancy</h2>
+            <p class="rbt-card-desc">
+              Production-tested multi-tenant cloud platforms built to scale customer subscriptions, manage workspace roles, and isolate critical business data.
+            </p>
+            <ul class="rbt-list-style-2">
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Single / Multi-Tenant Isolation (Database &amp; Schema Partitioning)</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Stripe &amp; LemonSqueezy Subscriptions &amp; Metered Usage Billing</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Granular Roles, Permissions &amp; Audit Trail Logging</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Unified Filament &amp; Custom Administrative Portals</span>
+              </li>
+            </ul>
+            <div class="rbt-card-footer">
+              <a href="./contact.html" class="btn btn--secondary btn--full">Request Scoping &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Service 4: MVP & Prototyping -->
+          <article class="rbt-card variation-01 rbt-hover" data-sal="slide-up">
+            <div class="rbt-card-top">
+              <span class="rbt-card-badge">LAUNCH</span>
+              <span class="rbt-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </span>
+            </div>
+            <h2 class="rbt-card-title">MVP &amp; Rapid Prototyping</h2>
+            <p class="rbt-card-desc">
+              Ship a production-grade Minimum Viable Product in weeks rather than quarters. Validate your market hypothesis with real users without creating throwaway code.
+            </p>
+            <ul class="rbt-list-style-2">
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Fast 3 to 6 Week Delivery Sprints with Weekly Working Software</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Clean Architecture Ready for Series Seed / Post-Launch Expansion</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Pre-Configured Authentication, Mailers, and Analytics</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Transparent Fixed-Price Agreements (No Hidden Burn)</span>
+              </li>
+            </ul>
+            <div class="rbt-card-footer">
+              <a href="./contact.html" class="btn btn--secondary btn--full">Request Scoping &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Service 5: Legacy App Modernization -->
+          <article class="rbt-card variation-01 rbt-hover" data-sal="slide-up" data-sal-delay="100">
+            <div class="rbt-card-top">
+              <span class="rbt-card-badge">MODERNIZE</span>
+              <span class="rbt-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="23 4 23 10 17 10"></polyline>
+                  <polyline points="1 20 1 14 7 14"></polyline>
+                  <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                </svg>
+              </span>
+            </div>
+            <h2 class="rbt-card-title">Legacy App Modernization</h2>
+            <p class="rbt-card-desc">
+              Revitalize aging, sluggish PHP and Node codebases. Refactor complex legacy debts, optimize slow SQL queries, and upgrade dependencies with zero production downtime.
+            </p>
+            <ul class="rbt-list-style-2">
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>PHP 7.x to PHP 8.3 &amp; Laravel Version Major Upgrades</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Elimination of Slow N+1 Queries &amp; In-Memory Data Leaks</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Zero-Downtime Blue/Green Database Migrations</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Introduction of Automated CI/CD Regression Guardrails</span>
+              </li>
+            </ul>
+            <div class="rbt-card-footer">
+              <a href="./contact.html" class="btn btn--secondary btn--full">Request Scoping &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Service 6: DevOps & Cloud Infrastructure -->
+          <article class="rbt-card variation-01 rbt-hover" data-sal="slide-up" data-sal-delay="200">
+            <div class="rbt-card-top">
+              <span class="rbt-card-badge">DEPLOY</span>
+              <span class="rbt-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </span>
+            </div>
+            <h2 class="rbt-card-title">DevOps &amp; Cloud Infrastructure</h2>
+            <p class="rbt-card-desc">
+              Containerized deployments, automated delivery pipelines, and cloud tuning on AWS or DigitalOcean ensuring your software ships reliably and stays up.
+            </p>
+            <ul class="rbt-list-style-2">
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Docker Containerization &amp; Multi-Stage Production Builds</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>GitHub Actions CI/CD with Automated Linting &amp; Testing</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Redis Clustering, Queue Workers &amp; Cron Scheduling</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Uptime Monitoring, Error Tracking (Sentry) &amp; Alert Routing</span>
+              </li>
+            </ul>
+            <div class="rbt-card-footer">
+              <a href="./contact.html" class="btn btn--secondary btn--full">Request Scoping &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENGAGEMENT PROCESS -->
+    <section class="section section--alt-bg" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-header" data-sal="slide-up">
+          <div class="rbt-card-badge badge-mb">Delivery Model</div>
+          <h2 id="process-title">How Engagements Work</h2>
+          <p>A transparent 4-stage engineering cycle with no guesswork or hourly billing surprises.</p>
+        </div>
+
+        <div class="grid-cards grid-cards--2">
+          <div class="rbt-card variation-01" data-sal="slide-up">
+            <div class="process-number">01</div>
+            <h3 class="rbt-card-title">Discovery &amp; System Audit</h3>
+            <p class="rbt-card-desc">We examine your product requirements, existing architectural pain points, user flows, and scale goals. You receive a structured technical review without any initial obligation.</p>
+          </div>
+          <div class="rbt-card variation-01" data-sal="slide-up" data-sal-delay="100">
+            <div class="process-number">02</div>
+            <h3 class="rbt-card-title">Technical Specification &amp; Fixed Scope</h3>
+            <p class="rbt-card-desc">I deliver an exact technical specification: API contracts, data models, infrastructure diagram, sprint schedule, and fixed-price quotation. No vague estimates.</p>
+          </div>
+          <div class="rbt-card variation-01" data-sal="slide-up">
+            <div class="process-number">03</div>
+            <h3 class="rbt-card-title">Sprint Execution &amp; Live Demos</h3>
+            <p class="rbt-card-desc">Work is shipped in focused two-week sprints. Every sprint concludes with working, tested software deployed to a staging environment for your feedback.</p>
+          </div>
+          <div class="rbt-card variation-01" data-sal="slide-up" data-sal-delay="100">
+            <div class="process-number">04</div>
+            <h3 class="rbt-card-title">Production Cutover &amp; Handoff</h3>
+            <p class="rbt-card-desc">We execute zero-downtime cutover with automated backups and telemetry. Full documentation, test suites, and git repository ownership are transferred to your team.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       SHARED FOOTER
+       ==================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="./index.html" class="logo" aria-label="DevCraft Home">
+            <span class="logo__bracket">&lt;</span>
+            <span>devcraft</span>
+            <span class="logo__bracket">/&gt;</span>
+          </a>
+          <p class="footer__brand-p">Enterprise-grade backend architectures, real-time engines, and scalable SaaS platforms engineered for zero downtime.</p>
+          <div class="footer__status-badge">
+            <span class="status-dot"></span>
+            <span>Available for projects starting next month</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Navigation</h4>
+          <ul class="footer__links">
+            <li><a href="./index.html" class="footer__link">Home</a></li>
+            <li><a href="./services.html" class="footer__link">Services</a></li>
+            <li><a href="./work.html" class="footer__link">Work</a></li>
+            <li><a href="./cloud.html" class="footer__link">Cloud Ecosystem</a></li>
+            <li><a href="./about.html" class="footer__link">About Engineer</a></li>
+            <li><a href="./contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Solutions</h4>
+          <ul class="footer__links">
+            <li><a href="./services.html" class="footer__link">Custom Web Apps</a></li>
+            <li><a href="./services.html" class="footer__link">High-Scale APIs</a></li>
+            <li><a href="./services.html" class="footer__link">SaaS Platforms</a></li>
+            <li><a href="./cloud.html" class="footer__link">DevCraft CRM</a></li>
+            <li><a href="./cloud.html" class="footer__link">AI Docs Generator</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Direct Contact</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:ratheesh82001@gmail.com" class="footer__link">ratheesh82001@gmail.com</a></li>
+            <li><a href="tel:+919345664881" class="footer__link">+91 9345664881</a></li>
+            <li><a href="https://linkedin.com/in/ratheesh82001" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn Profile</a></li>
+            <li><a href="https://github.com/ratheesh2001" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub Repositories</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span id="footerYear">2026</span> DevCraft Systems. All rights reserved.</p>
+        <p>Crafted by Ratheesh &bull; Built with pure HTML, CSS &amp; Vanilla JS</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+</html>

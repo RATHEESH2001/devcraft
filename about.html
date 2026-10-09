@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Lead Engineer &amp; Engineering Ethos — DevCraft</title>
+  <meta name="description" content="Meet Ratheesh, principal engineer at DevCraft. Learn about our backend-first philosophy: reliable systems, clear ownership, and zero-compromise code standards.">
+  <link rel="canonical" href="./about.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="About Lead Engineer & Engineering Ethos — DevCraft">
+  <meta property="og:description" content="Reliable systems. Clear ownership. Work directly with senior backend engineer Ratheesh.">
+  <meta property="og:url" content="./about.html">
+  <meta property="og:site_name" content="DevCraft">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+
+  <!-- Anti-FOUC Theme Script -->
+  <script>
+    (function() {
+      try {
+        var theme = localStorage.getItem('devcraft_theme');
+        if (!theme) {
+          theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        }
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ====================================================================
+       SHARED HEADER
+       ==================================================================== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="./index.html" class="logo" aria-label="DevCraft Home">
+        <span class="logo__bracket">&lt;</span>
+        <span>devcraft</span>
+        <span class="logo__bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-menu__list">
+          <li><a href="./services.html" class="nav-menu__link">Services</a></li>
+          <li><a href="./work.html" class="nav-menu__link">Work</a></li>
+          <li><a href="./cloud.html" class="nav-menu__link">Cloud</a></li>
+          <li><a href="./about.html" class="nav-menu__link" aria-current="page">Company</a></li>
+          <li><a href="./contact.html" class="nav-menu__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="theme-toggle__icon--dark" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-toggle__icon--light" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="./contact.html" class="btn btn--primary header__cta">Book Consultation &rarr;</a>
+
+        <button type="button" class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer__backdrop" id="mobileBackdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="mobile-drawer__header">
+      <a href="./index.html" class="logo" aria-label="DevCraft Home">
+        <span class="logo__bracket">&lt;</span>
+        <span>devcraft</span>
+        <span class="logo__bracket">/&gt;</span>
+      </a>
+      <button type="button" class="mobile-drawer__close" id="closeDrawer" aria-label="Close navigation drawer">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-drawer__nav">
+      <a href="./index.html" class="mobile-drawer__link">Home</a>
+      <a href="./services.html" class="mobile-drawer__link">Services</a>
+      <a href="./work.html" class="mobile-drawer__link">Work</a>
+      <a href="./cloud.html" class="mobile-drawer__link">Cloud</a>
+      <a href="./about.html" class="mobile-drawer__link" aria-current="page">Company</a>
+      <a href="./contact.html" class="mobile-drawer__link">Contact</a>
+    </nav>
+    <div class="mobile-drawer__footer">
+      <a href="./contact.html" class="btn btn--primary btn--full">Book Consultation &rarr;</a>
+    </div>
+  </aside>
+
+  <!-- ====================================================================
+       MAIN CONTENT
+       ==================================================================== -->
+  <main id="main">
+    <!-- STORY & PHILOSOPHY -->
+    <section class="section" aria-labelledby="about-title">
+      <div class="ambient-glow ambient-glow--primary ambient-glow--hero-primary"></div>
+      <div class="container">
+        <div class="about-layout">
+          <!-- Visual Avatar / Badge -->
+          <div data-sal="slide-up">
+            <div class="rbt-card variation-01 engineer-card">
+              <div class="engineer-avatar">
+                <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <h3 class="engineer-name">Ratheesh</h3>
+              <p class="engineer-title">Principal Software Engineer &bull; DevCraft</p>
+              <p class="case-study-desc badge-mb">
+                Certified backend specialist focused on high-concurrency Laravel &amp; Node systems, event architectures, and scalable web apps.
+              </p>
+              <div class="engineer-badges">
+                <span class="rbt-card-badge">Laravel Certified</span>
+                <span class="rbt-card-badge">TDD Practitioner</span>
+                <span class="rbt-card-badge">Clean Code</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Story Text -->
+          <div data-sal="slide-up" data-sal-delay="100">
+            <div class="rbt-card-badge badge-mb">Engineering Ethos</div>
+            <h1 id="about-title" class="badge-mb">Reliable Systems.<br><span class="text-gradient">Clear Ownership.</span></h1>
+            <p class="lead badge-mb">
+              I help startups and growing companies translate complex product requirements into resilient software that stays maintainable as team size and transaction volume grow.
+            </p>
+            <p class="badge-mb">
+              When you hire DevCraft, you do not talk through an account manager or junior proxy. You work directly with the senior engineer who plans the architecture, writes the tests, designs the database indexes, and monitors the production cutover.
+            </p>
+            <p class="badge-mb">
+              My core philosophy is simple: write code for the developer who has to maintain it six months from now. That means observable error logging, automated test suites, clean separation of concerns, and zero tolerated memory leaks.
+            </p>
+
+            <div class="hero__actions">
+              <a href="./contact.html" class="btn btn--primary">Discuss Your Project &rarr;</a>
+              <a href="./work.html" class="btn btn--secondary">Review Shipped Systems</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS MATRIX -->
+    <section class="section section--alt-bg" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-header" data-sal="slide-up">
+          <div class="rbt-card-badge badge-mb">Verified Competency Matrix</div>
+          <h2 id="skills-title">Technical Skills &amp; Stack Expertise</h2>
+          <p>The tools and frameworks used every day to build mission-critical business software.</p>
+        </div>
+
+        <div class="grid-cards grid-cards--3">
+          <!-- Group 1: Backend -->
+          <article class="rbt-card variation-01" data-sal="slide-up">
+            <h3 class="rbt-card-title text-accent">Backend Engineering</h3>
+            <p class="rbt-card-desc">Domain logic, robust APIs, asynchronous queues, and automated test runners.</p>
+            <div class="skills-tags">
+              <span class="rbt-card-badge">PHP 8.3</span>
+              <span class="rbt-card-badge">Laravel 11</span>
+              <span class="rbt-card-badge">Node.js (ES6+)</span>
+              <span class="rbt-card-badge">Express.js</span>
+              <span class="rbt-card-badge">PHPUnit / Pest</span>
+            </div>
+          </article>
+
+          <!-- Group 2: Databases -->
+          <article class="rbt-card variation-01" data-sal="slide-up" data-sal-delay="100">
+            <h3 class="rbt-card-title text-accent">Databases &amp; Caching</h3>
+            <p class="rbt-card-desc">Relational modeling, composite indexing, in-memory state, and full transactional integrity.</p>
+            <div class="skills-tags">
+              <span class="rbt-card-badge">PostgreSQL</span>
+              <span class="rbt-card-badge">MySQL</span>
+              <span class="rbt-card-badge">MariaDB</span>
+              <span class="rbt-card-badge">Redis</span>
+              <span class="rbt-card-badge">MongoDB</span>
+            </div>
+          </article>
+
+          <!-- Group 3: Real-Time Tech -->
+          <article class="rbt-card variation-01" data-sal="slide-up" data-sal-delay="200">
+            <h3 class="rbt-card-title text-accent">Real-Time Technologies</h3>
+            <p class="rbt-card-desc">Bidirectional event streaming, live socket channels, and sub-100ms messaging synchronization.</p>
+            <div class="skills-tags">
+              <span class="rbt-card-badge">WebSockets</span>
+              <span class="rbt-card-badge">Laravel Reverb</span>
+              <span class="rbt-card-badge">Laravel Echo</span>
+              <span class="rbt-card-badge">Socket.io</span>
+              <span class="rbt-card-badge">Redis Streams</span>
+            </div>
+          </article>
+
+          <!-- Group 4: Frontend -->
+          <article class="rbt-card variation-01" data-sal="slide-up">
+            <h3 class="rbt-card-title text-accent">Frontend UI &amp; Reactivity</h3>
+            <p class="rbt-card-desc">Modern reactive components without heavy bundle bloat or hydration issues.</p>
+            <div class="skills-tags">
+              <span class="rbt-card-badge">Vue 3</span>
+              <span class="rbt-card-badge">Livewire</span>
+              <span class="rbt-card-badge">Alpine.js</span>
+              <span class="rbt-card-badge">Inertia.js</span>
+              <span class="rbt-card-badge">Vanilla ES6+</span>
+            </div>
+          </article>
+
+          <!-- Group 5: API & Integrations -->
+          <article class="rbt-card variation-01" data-sal="slide-up" data-sal-delay="100">
+            <h3 class="rbt-card-title text-accent">APIs &amp; External Gateways</h3>
+            <p class="rbt-card-desc">Secure third-party integrations, webhook handling, and payment gateway coordination.</p>
+            <div class="skills-tags">
+              <span class="rbt-card-badge">RESTful APIs</span>
+              <span class="rbt-card-badge">GraphQL</span>
+              <span class="rbt-card-badge">Stripe &amp; Webhooks</span>
+              <span class="rbt-card-badge">OAuth2 &amp; JWT</span>
+              <span class="rbt-card-badge">Zoom / Vimeo API</span>
+            </div>
+          </article>
+
+          <!-- Group 6: DevOps & Cloud -->
+          <article class="rbt-card variation-01" data-sal="slide-up" data-sal-delay="200">
+            <h3 class="rbt-card-title text-accent">DevOps &amp; Infrastructure</h3>
+            <p class="rbt-card-desc">Continuous deployment, isolated container environments, and system telemetry.</p>
+            <div class="skills-tags">
+              <span class="rbt-card-badge">Docker</span>
+              <span class="rbt-card-badge">GitHub Actions</span>
+              <span class="rbt-card-badge">AWS EC2 / S3</span>
+              <span class="rbt-card-badge">DigitalOcean</span>
+              <span class="rbt-card-badge">Linux Administration</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENGINEERING PRINCIPLES -->
+    <section class="section" aria-labelledby="principles-title">
+      <div class="container">
+        <div class="section-header" data-sal="slide-up">
+          <div class="rbt-card-badge badge-mb">Quality Guardrails</div>
+          <h2 id="principles-title">Non-Negotiable Code Standards</h2>
+          <p>Every line of software committed to your repository adheres to these core engineering standards.</p>
+        </div>
+
+        <div class="grid-cards grid-cards--2">
+          <div class="rbt-card variation-01" data-sal="slide-up">
+            <h3 class="rbt-card-title">1. Test-Driven Development (TDD)</h3>
+            <p class="rbt-card-desc">Every business logic pathway, authorization gate, and edge case is backed by automated tests. You can refactor and upgrade frameworks in the future with total confidence.</p>
+          </div>
+          <div class="rbt-card variation-01" data-sal="slide-up" data-sal-delay="100">
+            <h3 class="rbt-card-title">2. SOLID &amp; Clean Domain Boundaries</h3>
+            <p class="rbt-card-desc">No 2,000-line controller monsters. We structure logic into discrete Service classes, Actions, and Value Objects that can be understood and audited in minutes.</p>
+          </div>
+          <div class="rbt-card variation-01" data-sal="slide-up">
+            <h3 class="rbt-card-title">3. Strict Query Budgets &amp; No N+1 Queries</h3>
+            <p class="rbt-card-desc">Every database query is analyzed. We enforce strict query budgets and automated alerts to catch unindexed scans and memory leaks before they ever hit production.</p>
+          </div>
+          <div class="rbt-card variation-01" data-sal="slide-up" data-sal-delay="100">
+            <h3 class="rbt-card-title">4. Zero-Downtime Migration Strategies</h3>
+            <p class="rbt-card-desc">Database schema evolution happens without locking tables or taking down live users. We employ backward-compatible columns, dual-writes, and blue/green deploys.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       SHARED FOOTER
+       ==================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="./index.html" class="logo" aria-label="DevCraft Home">
+            <span class="logo__bracket">&lt;</span>
+            <span>devcraft</span>
+            <span class="logo__bracket">/&gt;</span>
+          </a>
+          <p class="footer__brand-p">Enterprise-grade backend architectures, real-time engines, and scalable SaaS platforms engineered for zero downtime.</p>
+          <div class="footer__status-badge">
+            <span class="status-dot"></span>
+            <span>Available for projects starting next month</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Navigation</h4>
+          <ul class="footer__links">
+            <li><a href="./index.html" class="footer__link">Home</a></li>
+            <li><a href="./services.html" class="footer__link">Services</a></li>
+            <li><a href="./work.html" class="footer__link">Work</a></li>
+            <li><a href="./cloud.html" class="footer__link">Cloud Ecosystem</a></li>
+            <li><a href="./about.html" class="footer__link">About Engineer</a></li>
+            <li><a href="./contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Solutions</h4>
+          <ul class="footer__links">
+            <li><a href="./services.html" class="footer__link">Custom Web Apps</a></li>
+            <li><a href="./services.html" class="footer__link">High-Scale APIs</a></li>
+            <li><a href="./services.html" class="footer__link">SaaS Platforms</a></li>
+            <li><a href="./cloud.html" class="footer__link">DevCraft CRM</a></li>
+            <li><a href="./cloud.html" class="footer__link">AI Docs Generator</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Direct Contact</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:ratheesh82001@gmail.com" class="footer__link">ratheesh82001@gmail.com</a></li>
+            <li><a href="tel:+919345664881" class="footer__link">+91 9345664881</a></li>
+            <li><a href="https://linkedin.com/in/ratheesh82001" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn Profile</a></li>
+            <li><a href="https://github.com/ratheesh2001" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub Repositories</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span id="footerYear">2026</span> DevCraft Systems. All rights reserved.</p>
+        <p>Crafted by Ratheesh &bull; Built with pure HTML, CSS &amp; Vanilla JS</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+</html>

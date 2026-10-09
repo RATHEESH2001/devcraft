@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Selected Systems &amp; Case Studies — DevCraft</title>
+  <meta name="description" content="Explore production case studies by DevCraft: Nifty50 automated trading bot, scalable LMS virtual platform, and realtime financial infrastructure.">
+  <link rel="canonical" href="./work.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Selected Systems & Case Studies — DevCraft">
+  <meta property="og:description" content="In-depth technical case studies in Challenge, Solution, and Result format.">
+  <meta property="og:url" content="./work.html">
+  <meta property="og:site_name" content="DevCraft">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+
+  <!-- Anti-FOUC Theme Script -->
+  <script>
+    (function() {
+      try {
+        var theme = localStorage.getItem('devcraft_theme');
+        if (!theme) {
+          theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        }
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ====================================================================
+       SHARED HEADER
+       ==================================================================== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="./index.html" class="logo" aria-label="DevCraft Home">
+        <span class="logo__bracket">&lt;</span>
+        <span>devcraft</span>
+        <span class="logo__bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-menu__list">
+          <li><a href="./services.html" class="nav-menu__link">Services</a></li>
+          <li><a href="./work.html" class="nav-menu__link" aria-current="page">Work</a></li>
+          <li><a href="./cloud.html" class="nav-menu__link">Cloud</a></li>
+          <li><a href="./about.html" class="nav-menu__link">Company</a></li>
+          <li><a href="./contact.html" class="nav-menu__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="theme-toggle__icon--dark" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-toggle__icon--light" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="./contact.html" class="btn btn--primary header__cta">Book Consultation &rarr;</a>
+
+        <button type="button" class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer__backdrop" id="mobileBackdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="mobile-drawer__header">
+      <a href="./index.html" class="logo" aria-label="DevCraft Home">
+        <span class="logo__bracket">&lt;</span>
+        <span>devcraft</span>
+        <span class="logo__bracket">/&gt;</span>
+      </a>
+      <button type="button" class="mobile-drawer__close" id="closeDrawer" aria-label="Close navigation drawer">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-drawer__nav">
+      <a href="./index.html" class="mobile-drawer__link">Home</a>
+      <a href="./services.html" class="mobile-drawer__link">Services</a>
+      <a href="./work.html" class="mobile-drawer__link" aria-current="page">Work</a>
+      <a href="./cloud.html" class="mobile-drawer__link">Cloud</a>
+      <a href="./about.html" class="mobile-drawer__link">Company</a>
+      <a href="./contact.html" class="mobile-drawer__link">Contact</a>
+    </nav>
+    <div class="mobile-drawer__footer">
+      <a href="./contact.html" class="btn btn--primary btn--full">Book Consultation &rarr;</a>
+    </div>
+  </aside>
+
+  <!-- ====================================================================
+       MAIN CONTENT
+       ==================================================================== -->
+  <main id="main">
+    <!-- HERO HEADER -->
+    <section class="section section--compact-bottom">
+      <div class="ambient-glow ambient-glow--primary ambient-glow--top-left"></div>
+      <div class="container">
+        <div class="section-header section-header--left" data-sal="slide-up">
+          <div class="rbt-card-badge badge-mb">Engineering Portfolio</div>
+          <h1>Selected Production Systems</h1>
+          <p class="lead">
+            A deep technical look into architectural challenges solved across algorithmic finance, realtime learning, and high-concurrency payment integrations.
+          </p>
+        </div>
+
+        <!-- ACCESSIBLE FILTER CHIPS -->
+        <div class="filter-chips" id="projectFilters" role="region" aria-label="Project Technology Filters" data-sal="slide-up">
+          <button type="button" class="chip" data-filter="all" aria-pressed="true">All Projects</button>
+          <button type="button" class="chip" data-filter="laravel" aria-pressed="false">Laravel</button>
+          <button type="button" class="chip" data-filter="node" aria-pressed="false">Node.js</button>
+          <button type="button" class="chip" data-filter="realtime" aria-pressed="false">Real-Time</button>
+          <button type="button" class="chip" data-filter="api" aria-pressed="false">APIs</button>
+        </div>
+
+        <!-- Screen reader live announcement -->
+        <div id="filterLiveRegion" class="sr-only" aria-live="polite">Showing all projects</div>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES SECTION -->
+    <section class="section section--flush-top" aria-label="Case Studies Grid">
+      <div class="container">
+        <div class="grid-cards grid-cards--2" id="projectsGrid">
+          
+          <!-- Case Study 1: Nifty50 Trading System -->
+          <article class="rbt-card variation-01 rbt-hover" data-tags="node, realtime, api" data-sal="slide-up">
+            <div class="rbt-card-top">
+              <span class="rbt-card-badge">FINTECH &bull; ALGO TRADING</span>
+              <span class="case-study-metric">SUB-100MS EXECUTION</span>
+            </div>
+            <h2 class="rbt-card-title">Nifty50 Automated Trading System</h2>
+            <p class="rbt-card-desc">
+              Professional-grade event-driven algorithmic execution engine built for extreme market volatility in Indian index derivatives.
+            </p>
+
+            <div class="case-study-narrative">
+              <div>
+                <strong class="case-study-label case-study-label--challenge">The Challenge</strong>
+                <p class="case-study-desc">Live market ticks generated massive throughput spikes. False breakout signals and emotional revenge trading caused drawdowns in manual testing.</p>
+              </div>
+              <div>
+                <strong class="case-study-label case-study-label--solution">The Architectural Solution</strong>
+                <p class="case-study-desc">Engineered an asynchronous Node.js execution bot interfacing with Angel One SmartAPI via persistent WebSockets. Built a multi-indicator Confluence Engine (MACD/Momentum + Fibonacci pullback + volume price action) with automated news-guard overlays and a 4-layer risk guardrail (daily loss limits, cooldown manager, time-decay profit exits).</p>
+              </div>
+              <div>
+                <strong class="case-study-label case-study-label--result">The Verified Result</strong>
+                <p class="case-study-desc">Achieved sub-100ms order routing, zero missed ticks, and automated capital protection during 1,000+ simulated &amp; live trade executions.</p>
+              </div>
+            </div>
+
+            <ul class="rbt-list-style-2">
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Node.js ES6+, WebSockets &amp; Angel One SmartAPI</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Redis In-Memory State &amp; MariaDB Event Logging</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Docker Containerization with Health Heartbeats</span>
+              </li>
+            </ul>
+
+            <div class="rbt-card-footer">
+              <a href="./contact.html" class="btn btn--secondary btn--full">Hire for Similar FinTech Systems &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Case Study 2: Scale Learning LMS -->
+          <article class="rbt-card variation-01 rbt-hover" data-tags="laravel, realtime, api" data-sal="slide-up" data-sal-delay="100">
+            <div class="rbt-card-top">
+              <span class="rbt-card-badge">EDTECH &bull; SCALABLE LMS</span>
+              <span class="case-study-metric">99.98% UPTIME</span>
+            </div>
+            <h2 class="rbt-card-title">Scale Learning Platform &amp; Live Classroom</h2>
+            <p class="rbt-card-desc">
+              Multi-tiered learning platform engineered for institutional education, live tutoring broadcasts, and automated progression gating.
+            </p>
+
+            <div class="case-study-narrative">
+              <div>
+                <strong class="case-study-label case-study-label--challenge">The Challenge</strong>
+                <p class="case-study-desc">Legacy platform suffered from desynchronized student attendance, unverified offline payment enrollments, and video delivery buffering across remote learners.</p>
+              </div>
+              <div>
+                <strong class="case-study-label case-study-label--solution">The Architectural Solution</strong>
+                <p class="case-study-desc">Engineered a modern Laravel 11 architecture utilizing Filament administration, Spatie granular permissions, and level-gated progression logic (Level 1–4 curriculum unlock). Synchronized Zoom API live virtual classes, secure Vimeo video streams, and built real-time student-tutor chat using Laravel Echo &amp; Reverb.</p>
+              </div>
+              <div>
+                <strong class="case-study-label case-study-label--result">The Verified Result</strong>
+                <p class="case-study-desc">Eliminated manual enrollment verification by 80%, supported thousands of concurrent students during live examinations with zero downtime.</p>
+              </div>
+            </div>
+
+            <ul class="rbt-list-style-2">
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Laravel 11, Livewire &amp; Filament Admin Panels</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Realtime WebSockets Broadcasting via Laravel Reverb</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Zoom &amp; Vimeo API Video Delivery Integration</span>
+              </li>
+            </ul>
+
+            <div class="rbt-card-footer">
+              <a href="./contact.html" class="btn btn--secondary btn--full">Hire for Similar LMS Builds &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Case Study 3: Realtime Financial Integration & CRM -->
+          <article class="rbt-card variation-01 rbt-hover" data-tags="node, api, realtime" data-sal="slide-up">
+            <div class="rbt-card-top">
+              <span class="rbt-card-badge">FINANCE &bull; ENTERPRISE CRM</span>
+              <span class="case-study-metric">100% AUDITABLE</span>
+            </div>
+            <h2 class="rbt-card-title">Realtime Financial Transaction &amp; CRM Sync</h2>
+            <p class="rbt-card-desc">
+              High-concurrency webhook ingestion pipeline connecting third-party banking APIs with an internal customer relationship management system.
+            </p>
+
+            <div class="case-study-narrative">
+              <div>
+                <strong class="case-study-label case-study-label--challenge">The Challenge</strong>
+                <p class="case-study-desc">Spikes in payment gateway webhooks caused database locking, lost transaction states, and reconciliation delays between sales teams and accounting.</p>
+              </div>
+              <div>
+                <strong class="case-study-label case-study-label--solution">The Architectural Solution</strong>
+                <p class="case-study-desc">Designed an idempotent event ingestion engine using Node.js and Redis streams. Transactions are acknowledged in under 15ms, buffered in in-memory queues, and reconciled asynchronously with full double-entry ledger verification.</p>
+              </div>
+              <div>
+                <strong class="case-study-label case-study-label--result">The Verified Result</strong>
+                <p class="case-study-desc">Processed over 250,000 monthly transactions without duplicate records or ledger imbalances. Decreased sales reconciliation lag from 4 hours to instantaneous.</p>
+              </div>
+            </div>
+
+            <ul class="rbt-list-style-2">
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Node.js Microservice &amp; Redis Pub/Sub Stream Engine</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>PostgreSQL ACID-Compliant Transaction Journal</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Idempotent Webhook Signatures with HMAC-SHA256</span>
+              </li>
+            </ul>
+
+            <div class="rbt-card-footer">
+              <a href="./contact.html" class="btn btn--secondary btn--full">Hire for Similar FinTech Systems &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Case Study 4: Multi-Tenant SaaS Platform Engine -->
+          <article class="rbt-card variation-01 rbt-hover" data-tags="laravel, api" data-sal="slide-up" data-sal-delay="100">
+            <div class="rbt-card-top">
+              <span class="rbt-card-badge">SAAS &bull; MULTI-TENANCY</span>
+              <span class="case-study-metric">ENTERPRISE READY</span>
+            </div>
+            <h2 class="rbt-card-title">Enterprise Multi-Tenant SaaS Engine</h2>
+            <p class="rbt-card-desc">
+              Custom multi-tenant subscription backbone powering business workspace isolation, team permissioning, and metered API billing.
+            </p>
+
+            <div class="case-study-narrative">
+              <div>
+                <strong class="case-study-label case-study-label--challenge">The Challenge</strong>
+                <p class="case-study-desc">Client needed to convert single-client software into an enterprise SaaS with complete regulatory data isolation per organization and automated tier upgrades.</p>
+              </div>
+              <div>
+                <strong class="case-study-label case-study-label--solution">The Architectural Solution</strong>
+                <p class="case-study-desc">Built an automated database provisioning layer in Laravel. Custom domain resolution assigns requests dynamically to tenant databases, preventing cross-tenant data leaks. Configured Stripe Customer Portal and webhook events for automatic plan tier upgrades.</p>
+              </div>
+              <div>
+                <strong class="case-study-label case-study-label--result">The Verified Result</strong>
+                <p class="case-study-desc">Onboarded over 60 organizational accounts within the first quarter without performance degradation or security vulnerabilities.</p>
+              </div>
+            </div>
+
+            <ul class="rbt-list-style-2">
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Dynamic Multi-Database Tenant Partitioning</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Automated Stripe Billing Lifecycles &amp; Metering</span>
+              </li>
+              <li class="rbt-list-item">
+                <svg class="rbt-list-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Docker Production Stack with Auto-Scale Policies</span>
+              </li>
+            </ul>
+
+            <div class="rbt-card-footer">
+              <a href="./contact.html" class="btn btn--secondary btn--full">Hire for Similar SaaS Builds &rarr;</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Filter Empty State -->
+        <div id="filterEmptyState" class="rbt-card variation-01 card-center empty-state-box">
+          <h3 class="rbt-card-title">No projects match the selected filter.</h3>
+          <p class="rbt-card-desc">Try selecting "All Projects" or reach out to discuss custom architectures matching your stack.</p>
+          <a href="./contact.html" class="btn btn--primary btn--mt">Ask About Your Tech Stack &rarr;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       SHARED FOOTER
+       ==================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="./index.html" class="logo" aria-label="DevCraft Home">
+            <span class="logo__bracket">&lt;</span>
+            <span>devcraft</span>
+            <span class="logo__bracket">/&gt;</span>
+          </a>
+          <p class="footer__brand-p">Enterprise-grade backend architectures, real-time engines, and scalable SaaS platforms engineered for zero downtime.</p>
+          <div class="footer__status-badge">
+            <span class="status-dot"></span>
+            <span>Available for projects starting next month</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Navigation</h4>
+          <ul class="footer__links">
+            <li><a href="./index.html" class="footer__link">Home</a></li>
+            <li><a href="./services.html" class="footer__link">Services</a></li>
+            <li><a href="./work.html" class="footer__link">Work</a></li>
+            <li><a href="./cloud.html" class="footer__link">Cloud Ecosystem</a></li>
+            <li><a href="./about.html" class="footer__link">About Engineer</a></li>
+            <li><a href="./contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Solutions</h4>
+          <ul class="footer__links">
+            <li><a href="./services.html" class="footer__link">Custom Web Apps</a></li>
+            <li><a href="./services.html" class="footer__link">High-Scale APIs</a></li>
+            <li><a href="./services.html" class="footer__link">SaaS Platforms</a></li>
+            <li><a href="./cloud.html" class="footer__link">DevCraft CRM</a></li>
+            <li><a href="./cloud.html" class="footer__link">AI Docs Generator</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Direct Contact</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:ratheesh82001@gmail.com" class="footer__link">ratheesh82001@gmail.com</a></li>
+            <li><a href="tel:+919345664881" class="footer__link">+91 9345664881</a></li>
+            <li><a href="https://linkedin.com/in/ratheesh82001" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn Profile</a></li>
+            <li><a href="https://github.com/ratheesh2001" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub Repositories</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span id="footerYear">2026</span> DevCraft Systems. All rights reserved.</p>
+        <p>Crafted by Ratheesh &bull; Built with pure HTML, CSS &amp; Vanilla JS</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+  <script src="./js/filter.js"></script>
+</body>
+</html>

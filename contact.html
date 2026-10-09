@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Start a Build / Contact Lead Engineer — DevCraft</title>
+  <meta name="description" content="Get in touch with DevCraft principal engineer Ratheesh. Discuss your upcoming web application, backend API, or SaaS platform project.">
+  <link rel="canonical" href="./contact.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Start a Build / Contact Lead Engineer — DevCraft">
+  <meta property="og:description" content="Direct communication with senior engineer Ratheesh. Fast response and technical scoping.">
+  <meta property="og:url" content="./contact.html">
+  <meta property="og:site_name" content="DevCraft">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+
+  <!-- Anti-FOUC Theme Script -->
+  <script>
+    (function() {
+      try {
+        var theme = localStorage.getItem('devcraft_theme');
+        if (!theme) {
+          theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        }
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ====================================================================
+       SHARED HEADER
+       ==================================================================== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="./index.html" class="logo" aria-label="DevCraft Home">
+        <span class="logo__bracket">&lt;</span>
+        <span>devcraft</span>
+        <span class="logo__bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-menu__list">
+          <li><a href="./services.html" class="nav-menu__link">Services</a></li>
+          <li><a href="./work.html" class="nav-menu__link">Work</a></li>
+          <li><a href="./cloud.html" class="nav-menu__link">Cloud</a></li>
+          <li><a href="./about.html" class="nav-menu__link">Company</a></li>
+          <li><a href="./contact.html" class="nav-menu__link" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="theme-toggle__icon--dark" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-toggle__icon--light" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="./contact.html" class="btn btn--primary header__cta">Book Consultation &rarr;</a>
+
+        <button type="button" class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer__backdrop" id="mobileBackdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="mobile-drawer__header">
+      <a href="./index.html" class="logo" aria-label="DevCraft Home">
+        <span class="logo__bracket">&lt;</span>
+        <span>devcraft</span>
+        <span class="logo__bracket">/&gt;</span>
+      </a>
+      <button type="button" class="mobile-drawer__close" id="closeDrawer" aria-label="Close navigation drawer">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-drawer__nav">
+      <a href="./index.html" class="mobile-drawer__link">Home</a>
+      <a href="./services.html" class="mobile-drawer__link">Services</a>
+      <a href="./work.html" class="mobile-drawer__link">Work</a>
+      <a href="./cloud.html" class="mobile-drawer__link">Cloud</a>
+      <a href="./about.html" class="mobile-drawer__link">Company</a>
+      <a href="./contact.html" class="mobile-drawer__link" aria-current="page">Contact</a>
+    </nav>
+    <div class="mobile-drawer__footer">
+      <a href="./contact.html" class="btn btn--primary btn--full">Book Consultation &rarr;</a>
+    </div>
+  </aside>
+
+  <!-- ====================================================================
+       MAIN CONTENT
+       ==================================================================== -->
+  <main id="main">
+    <section class="section" aria-labelledby="contact-heading">
+      <div class="ambient-glow ambient-glow--primary ambient-glow--top-right"></div>
+      <div class="container">
+        <div class="contact-layout">
+          <!-- Left Column: Details & Direct Channels -->
+          <div data-sal="slide-up">
+            <div class="rbt-card-badge badge-mb">Direct Engineering Scoping</div>
+            <h1 id="contact-heading" class="badge-mb">
+              Bring Clarity to Your <span class="text-gradient">Next Build.</span>
+            </h1>
+            <p class="lead badge-mb">
+              Share the product, constraint, or high-scale system that needs attention. I’ll reply within 24 hours with an actionable technical plan and timeline.
+            </p>
+
+            <!-- Availability Status Badge -->
+            <div class="rbt-card variation-01 status-card">
+              <div class="status-card-inner">
+                <span class="status-dot"></span>
+                <div>
+                  <strong class="testimonial-author">Availability Status</strong>
+                  <span class="testimonial-role">Accepting new engineering projects starting <strong>next month</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Direct Contact List -->
+            <div class="contact-direct-list">
+              <a href="mailto:ratheesh82001@gmail.com" class="rbt-card variation-01 rbt-hover direct-contact-item">
+                <div class="direct-contact-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="direct-contact-label">Direct Email</div>
+                  <div class="direct-contact-val">ratheesh82001@gmail.com</div>
+                </div>
+              </a>
+
+              <a href="tel:+919345664881" class="rbt-card variation-01 rbt-hover direct-contact-item">
+                <div class="direct-contact-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="direct-contact-label">Direct Phone / WhatsApp</div>
+                  <div class="direct-contact-val">+91 9345664881</div>
+                </div>
+              </a>
+
+              <a href="https://calendly.com" target="_blank" rel="noopener noreferrer" class="rbt-card variation-01 rbt-hover direct-contact-item">
+                <div class="direct-contact-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                </div>
+                <div>
+                  <div class="direct-contact-label">Schedule Call</div>
+                  <div class="direct-contact-val">Book 30-Min Discovery via Calendly &rarr;</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Project Qualification Form -->
+          <div data-sal="slide-up" data-sal-delay="100">
+            <div class="rbt-card variation-01 contact-form-card">
+              <h2 class="rbt-card-title">Project Qualification Form</h2>
+              <p class="case-study-desc badge-mb">Tell me about what you are building. All inquiries receive direct attention from Ratheesh.</p>
+
+              <!-- Inline status alerts -->
+              <div id="contactSuccess" class="form-alert form-alert--success" role="alert"></div>
+              <div id="contactError" class="form-alert form-alert--error" role="alert"></div>
+
+              <form id="contactForm" novalidate>
+                <div class="grid-cards">
+                  <!-- Name Field -->
+                  <div class="form-group">
+                    <label for="contactName" class="form-label">Full Name *</label>
+                    <input type="text" id="contactName" name="name" class="form-input" placeholder="e.g. Alex Johnson" required autocomplete="name">
+                    <span class="form-error-msg" aria-live="polite">Please provide your full name (min 2 characters).</span>
+                  </div>
+
+                  <!-- Email Field -->
+                  <div class="form-group">
+                    <label for="contactEmail" class="form-label">Work Email *</label>
+                    <input type="email" id="contactEmail" name="email" class="form-input" placeholder="e.g. alex@company.com" required autocomplete="email">
+                    <span class="form-error-msg" aria-live="polite">Please enter a valid work email address.</span>
+                  </div>
+
+                  <!-- Company Name Field -->
+                  <div class="form-group">
+                    <label for="contactCompany" class="form-label">Company / Product Name</label>
+                    <input type="text" id="contactCompany" name="company" class="form-input" placeholder="e.g. Acme Cloud Inc." autocomplete="organization">
+                  </div>
+
+                  <!-- Service Select -->
+                  <div class="form-group">
+                    <label for="contactService" class="form-label">Primary Service Needed *</label>
+                    <select id="contactService" name="service" class="form-select" required>
+                      <option value="">Select a service category...</option>
+                      <option value="custom-app">Custom Web Application (Laravel / Vue)</option>
+                      <option value="api-realtime">API &amp; Realtime WebSockets Engineering</option>
+                      <option value="saas">SaaS Multi-Tenant Architecture</option>
+                      <option value="mvp">Rapid Production MVP</option>
+                      <option value="modernization">Legacy Modernization &amp; Refactoring</option>
+                      <option value="cloud-module">DevCraft Business Cloud Module</option>
+                      <option value="devops">DevOps &amp; Cloud Tuning</option>
+                    </select>
+                    <span class="form-error-msg" aria-live="polite">Please select a service category.</span>
+                  </div>
+
+                  <!-- Budget & Timeline Row -->
+                  <div class="form-grid-2">
+                    <div class="form-group">
+                      <label for="contactBudget" class="form-label">Target Budget</label>
+                      <select id="contactBudget" name="budget" class="form-select">
+                        <option value="undisclosed">Select range...</option>
+                        <option value="under-3k">&lt; $3,000</option>
+                        <option value="3k-7k">$3,000 – $7,000</option>
+                        <option value="7k-15k">$7,000 – $15,000</option>
+                        <option value="15k-plus">$15,000+</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="contactTimeline" class="form-label">Ideal Timeline</label>
+                      <select id="contactTimeline" name="timeline" class="form-select">
+                        <option value="flexible">Select timeline...</option>
+                        <option value="urgent">Immediate (2–3 weeks)</option>
+                        <option value="1-month">1 Month</option>
+                        <option value="quarter">Within this quarter</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Message / Project Details -->
+                  <div class="form-group">
+                    <label for="contactMessage" class="form-label">Project Details &amp; Objectives *</label>
+                    <textarea id="contactMessage" name="message" class="form-textarea" placeholder="Briefly describe what you are building, existing architecture, and any specific technical constraints." required></textarea>
+                    <span class="form-error-msg" aria-live="polite">Please provide a brief description (min 10 characters).</span>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <button type="submit" id="contactSubmitBtn" class="btn btn--primary btn--full btn--mt">
+                    Submit Project Enquiry &rarr;
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       SHARED FOOTER
+       ==================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="./index.html" class="logo" aria-label="DevCraft Home">
+            <span class="logo__bracket">&lt;</span>
+            <span>devcraft</span>
+            <span class="logo__bracket">/&gt;</span>
+          </a>
+          <p class="footer__brand-p">Enterprise-grade backend architectures, real-time engines, and scalable SaaS platforms engineered for zero downtime.</p>
+          <div class="footer__status-badge">
+            <span class="status-dot"></span>
+            <span>Available for projects starting next month</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Navigation</h4>
+          <ul class="footer__links">
+            <li><a href="./index.html" class="footer__link">Home</a></li>
+            <li><a href="./services.html" class="footer__link">Services</a></li>
+            <li><a href="./work.html" class="footer__link">Work</a></li>
+            <li><a href="./cloud.html" class="footer__link">Cloud Ecosystem</a></li>
+            <li><a href="./about.html" class="footer__link">About Engineer</a></li>
+            <li><a href="./contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Solutions</h4>
+          <ul class="footer__links">
+            <li><a href="./services.html" class="footer__link">Custom Web Apps</a></li>
+            <li><a href="./services.html" class="footer__link">High-Scale APIs</a></li>
+            <li><a href="./services.html" class="footer__link">SaaS Platforms</a></li>
+            <li><a href="./cloud.html" class="footer__link">DevCraft CRM</a></li>
+            <li><a href="./cloud.html" class="footer__link">AI Docs Generator</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Direct Contact</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:ratheesh82001@gmail.com" class="footer__link">ratheesh82001@gmail.com</a></li>
+            <li><a href="tel:+919345664881" class="footer__link">+91 9345664881</a></li>
+            <li><a href="https://linkedin.com/in/ratheesh82001" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn Profile</a></li>
+            <li><a href="https://github.com/ratheesh2001" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub Repositories</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span id="footerYear">2026</span> DevCraft Systems. All rights reserved.</p>
+        <p>Crafted by Ratheesh &bull; Built with pure HTML, CSS &amp; Vanilla JS</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/main.js"></script>
+  <script src="./js/form.js"></script>
+</body>
+</html>
