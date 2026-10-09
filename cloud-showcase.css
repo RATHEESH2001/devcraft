@@ -1,0 +1,297 @@
+/* ============================================================
+   CLOUD SHOWCASE SECTION
+   ============================================================ */
+
+.cloud-showcase {
+    padding: 100px 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+}
+
+.cloud-showcase__shell {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.4);
+}
+
+/* Mock Browser Topbar */
+.cloud-showcase__topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 12px 16px;
+    background: var(--bg-2);
+    border-bottom: 1px solid var(--border);
+}
+
+.cloud-showcase__tabs-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cloud-showcase__tab {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-3);
+    padding: 4px 8px;
+    background: transparent;
+    border-radius: 4px;
+    border: none;
+}
+
+.cloud-showcase__tab--window {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.cloud-showcase__tab--window span {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--text-3);
+    position: absolute;
+}
+
+.cloud-showcase__tab--window span:nth-child(1) {
+    top: 4px;
+    left: 4px;
+    background: var(--red);
+}
+
+.cloud-showcase__tab--window span:nth-child(2) {
+    top: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--amber);
+}
+
+.cloud-showcase__tab--window span:nth-child(3) {
+    top: 4px;
+    right: 4px;
+    background: var(--green);
+}
+
+.cloud-showcase__tab--site {
+    padding: 6px 12px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+/* Navigation Links */
+.cloud-showcase__nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+    justify-content: center;
+}
+
+.cloud-showcase__nav a {
+    font-size: 0.9rem;
+    color: var(--text-2);
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+.cloud-showcase__nav a:hover {
+    color: var(--accent);
+}
+
+/* Action Buttons */
+.cloud-showcase__actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cloud-showcase__signin {
+    font-size: 0.85rem;
+    color: var(--text-2);
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+.cloud-showcase__signin:hover {
+    color: var(--text);
+    background: rgba(0, 245, 212, 0.05);
+}
+
+.cloud-showcase__cta {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+    background: var(--accent);
+    color: var(--bg);
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+}
+
+.cloud-showcase__cta:hover {
+    background: #fff;
+    box-shadow: 0 0 16px var(--accent-glow);
+    transform: translateY(-1px);
+}
+
+/* Content Section */
+.cloud-showcase__content {
+    padding: 60px;
+}
+
+.cloud-showcase__content h2 {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: var(--text);
+}
+
+.cloud-showcase__content > p {
+    color: var(--text-2);
+    font-size: 1.05rem;
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+/* Cards Grid */
+.cloud-showcase__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.cloud-showcase__card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 28px 24px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.cloud-showcase__card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s var(--ease-out-expo);
+}
+
+.cloud-showcase__card:hover {
+    border-color: var(--border-2);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+}
+
+.cloud-showcase__card:hover::before {
+    transform: scaleX(1);
+}
+
+.cloud-showcase__icon {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    display: block;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.cloud-showcase__card:hover .cloud-showcase__icon {
+    opacity: 1;
+}
+
+.cloud-showcase__card h3 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--text);
+}
+
+.cloud-showcase__card p {
+    font-size: 0.9rem;
+    color: var(--text-2);
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.cloud-showcase__card small {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-3);
+    line-height: 1.6;
+}
+
+.cloud-showcase__status {
+    display: inline-block;
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    background: rgba(34, 197, 94, 0.15);
+    color: var(--green);
+    border-radius: 3px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    font-family: var(--font-mono);
+}
+
+.cloud-showcase__status--soon {
+    background: rgba(156, 163, 175, 0.15);
+    color: var(--text-3);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .cloud-showcase__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .cloud-showcase__topbar {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .cloud-showcase__nav {
+        order: 3;
+        width: 100%;
+        justify-content: flex-start;
+        gap: 12px;
+    }
+
+    .cloud-showcase__nav a {
+        font-size: 0.85rem;
+    }
+
+    .cloud-showcase__content {
+        padding: 40px 24px;
+    }
+
+    .cloud-showcase__content h2 {
+        font-size: 1.8rem;
+    }
+
+    .cloud-showcase__grid {
+        grid-template-columns: 1fr;
+    }
+}
