@@ -4,8 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>DevCraft — Custom Web Application Development</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="cloud-showcase.css" />
+    <link rel="stylesheet" href="redesign.css" />
     <script defer src="main.js"></script>
 </head>
 
@@ -235,7 +239,7 @@
             <div class="section-header">
                 <span class="section-label">// what I do</span>
                 <h2 class="section-title">Services</h2>
-                <p class="section-desc">End-to-end development from architecture to deployment. No hand-offs, no miscommunication — just clean, working software.</p>
+                <p class="section-desc">Focused engineering for teams that need a reliable product foundation, not another disposable prototype.</p>
             </div>
 
             <div class="services__grid">
@@ -362,7 +366,8 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-label">// selected projects</span>
-                <h2 class="section-title">Recent Work</h2>
+                <h2 class="section-title">Selected systems</h2>
+                <p class="section-desc">A small sample of the product, realtime, and infrastructure problems I solve.</p>
             </div>
 
             <div class="work__top">
@@ -777,8 +782,8 @@
             <div class="contact__inner">
                 <div class="contact__left" data-reveal>
                     <span class="section-label">// get in touch</span>
-                    <h2 class="contact__title">Let's Build Something.</h2>
-                    <p class="contact__desc">Have a project in mind? Tell me about it. I typically respond within 24 hours.</p>
+                    <h2 class="contact__title">Bring clarity to your next build.</h2>
+                    <p class="contact__desc">Share the product, constraint, or system that needs attention. I’ll reply with the right next step—whether that’s a focused technical review or a delivery plan.</p>
 
                     <div class="contact__methods">
                         <a href="mailto:hello@devcraft.dev" class="contact__method">
@@ -836,7 +841,7 @@
                             <textarea id="message" name="message" rows="5" placeholder="What are you building? What problem does it solve? Any timeline or budget in mind?" required></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn--primary btn--full">Send Message →</button>
+                        <button type="submit" class="btn btn--primary btn--full">Start the conversation <span aria-hidden="true">→</span></button>
                     </form>
                 </div>
             </div>
